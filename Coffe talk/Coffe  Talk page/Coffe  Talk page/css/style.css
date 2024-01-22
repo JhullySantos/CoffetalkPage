@@ -1,0 +1,191 @@
+/*muda a fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+
+/*formatação da pagina toda*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    /* variaveis de cores usadas ao longo do site*/
+    :root{
+        --marrom:#80312B;
+        --dark:#16131B; 
+        --branco:#ffffff;
+    }
+
+    body{
+        color: var(--dark);
+        background: var(--dark);
+    }
+
+
+ /*  ----------- formatação do menu  ---------------*/
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 40px;
+        box-shadow: 0 0.1rem 0.5rem #7965af;
+        width: 100%;
+        background: var(--dark);
+        transition: all 0.5s;
+        position: fixed;  
+    }
+
+    /* formatação do  titulo do menu*/
+        .navigation .titulo{ 
+            color: var(--branco);
+            font-size: 1.7rem;
+            font-weight: 900;
+        } 
+
+/* ----------   Formatação dos elementos do menu --------------*/
+            .navigation ul{
+                display: flex;
+                align-items: center;
+                gap: 5rem;  /* espaçamento entre os elementos do menu*/ 
+            }
+            .navigation ul li a{
+                color: var(--branco);  /* cor da fonte do menu*/
+                font-size: 17px;
+                font-weight: 500;
+                transition: all 0.5s;
+            }
+            .navigation ul li a:hover{
+                color: var(--marrom);  /* muda a cor dos elementos do menu ao aproximar o  mouse */
+            }
+            
+ /* conteudo do main */
+    .home{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  /*vai fazer com que os itens  fiquem separados estilo esquerda e direita*/
+        padding: 0px 10%;  /*  esse 10% e para  as laterais*/
+    }
+
+        .home-text{
+            max-width: 34rem;  /*largura maxima*/
+        }
+
+            .home-text .text-h4{
+                font-size: 1.5rem;
+                color: var(--marrom);
+                margin-bottom: 1rem;  /*afastamento do 2 texto*/
+            }
+
+            .home-text .text-h1{
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                line-height: 3rem;
+                color: var(--branco);  /* altura da linha*/
+            }
+
+            .home-text p{
+                margin-bottom: 1rem; 
+                font-size: 1.2rem ; /*espacemento em cima da margem*/
+            }
+
+         /*   Formatação do botão     */
+        .home-btn{
+            padding: 15px 45px;
+            background: var(--marrom);
+            color: var(--dark);
+            border-radius: 10px;
+            font-weight: 700;
+            transition: all 0.5s;
+            box-shadow: 0 0.1rem 0.5rem #442e80;
+            }
+        
+                .home-btn:hover{
+                    background:#7965af;
+                }
+
+    /*Formatação  da imagem */
+
+        .home-img img{
+            width: 100%;
+            border-radius: 15%;
+            box-shadow: 0 0.1rem 0.5rem #7965af;
+        }
+
+/* -----------  formatação da page sobre ----------*/
+    .conteiner img{
+        width: 90%; 
+        margin: 5%; 
+    }
+
+    .conteiner{
+        width: 100%;
+        height: 90%;
+        padding: 10px 10%; 
+        color: var(--branco);
+        font-size: 1.5rem;
+    }
+
+    .conteiner .sobre-p1{
+        margin-top: 15%;
+    }
+
+/*  ----------------- Formulário -------------------------------------------         */
+
+    .formulario{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--dark);
+        width: 340px;
+        height: 500px;
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        border-radius: 5%;
+        box-shadow: 0 0.1rem 0.5rem #7965af;
+    }
+
+        .form-titulo{
+            color: var(--branco);
+            margin-left: 15%;
+        }
+
+        .formulario input, label{
+            position: relative;
+            color: var(--branco);
+            margin-bottom: 1rem; 
+            padding: 10px;
+            margin: 13px;
+        }
+
+        .formulario input{
+            color: var(--dark);
+        }
+
+            #confirmeSenha{
+                width: 300px;
+            }
+
+            .btn-form{
+                background-color: var(--dark);
+                color: var(--branco);
+                border-radius: 5rem;
+                height: 3rem;
+                width:  15rem;
+                margin: 25px;
+                position: relative;
+                box-shadow: 0 0.1rem 0.5rem #7965af;
+            }
+
+                .btn-form:hover{
+                    background:var(--marrom);
+                }
+
+
+
